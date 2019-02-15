@@ -28,9 +28,9 @@ def dpRandom(cap, absPoint0 , ordPoint0):
                     frame.itemset((i , j, 0), 255)
                     frame.itemset((i , j, 1), 0)
                     frame.itemset((i, j , 2), 0)
-                    absPoint0[nbAbsPoint0] = i
+                    absPoint0[nbAbsPoint0] = j
                     nbAbsPoint0 = nbAbsPoint0 + 1
-                    ordPoint0[nbOrdPoint0] = j
+                    ordPoint0[nbOrdPoint0] = i
                     nbOrdPoint0 = nbOrdPoint0 + 1
         cv2.imshow("Double pendule", frame)
         if nbAbsPoint0==0:
